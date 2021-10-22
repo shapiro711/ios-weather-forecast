@@ -16,6 +16,10 @@
 <img width="500" alt="스크린샷 2021-10-22 오후 8 39 37" src="https://user-images.githubusercontent.com/39452092/138457236-72d04591-623d-4ea7-b8ff-626fe5051439.gif">
 </div>
 </details>
+&nbsp;   
+
+## 🔥UML
+<img width="1000" src="https://user-images.githubusercontent.com/39452092/138472621-34934402-8610-4277-853e-a8b78e3f9662.png" />
 
 &nbsp;    
 # STEP1 - 모델 및 네트워킹 타입 구현
