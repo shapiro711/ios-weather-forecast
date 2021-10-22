@@ -24,6 +24,7 @@ final class MainWeatherTableViewCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.preferredFont(forTextStyle: .body)
         label.setContentHuggingPriority(.defaultLow, for: .horizontal)
+        label.numberOfLines = 0
         
         return label
     }()
@@ -31,6 +32,7 @@ final class MainWeatherTableViewCell: UITableViewCell {
         let label = UILabel()
         label.font = UIFont.preferredFont(forTextStyle: .body)
         label.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        label.setContentCompressionResistancePriority(.required, for: .horizontal)
     
         return label
     }()

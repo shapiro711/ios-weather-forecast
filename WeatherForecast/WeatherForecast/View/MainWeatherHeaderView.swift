@@ -48,6 +48,7 @@ final class MainWeatherHeaderView: UIView {
         label.text = "-"
         label.font = UIFont.preferredFont(forTextStyle: .callout)
         label.setContentHuggingPriority(.defaultLow, for: .horizontal)
+        label.adjustsFontForContentSizeCategory = true
         
         return label
     }()
@@ -56,6 +57,7 @@ final class MainWeatherHeaderView: UIView {
         label.text = "-"
         label.font = UIFont.preferredFont(forTextStyle: .callout)
         label.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        label.adjustsFontForContentSizeCategory = true
         
         return label
     }()
@@ -64,6 +66,7 @@ final class MainWeatherHeaderView: UIView {
         label.text = "-"
         label.font = UIFont.preferredFont(forTextStyle: .callout)
         label.setContentHuggingPriority(.defaultLow, for: .horizontal)
+        label.adjustsFontForContentSizeCategory = true
         
         return label
     }()
@@ -71,16 +74,18 @@ final class MainWeatherHeaderView: UIView {
         let label = UILabel()
         label.text = "-"
         label.font = UIFont.preferredFont(forTextStyle: .title2)
+        label.adjustsFontForContentSizeCategory = true
         
         return label
     }()
     private let locationSettingButton: UIButton = {
         let button = UIButton()
         button.setTitle("HeaderView_LocationSettingButton_Title".localized(), for: .normal)
-        button.setTitleColor(.black, for: .normal)
+        button.setTitleColor(.label, for: .normal)
         button.titleLabel?.font = UIFont.preferredFont(forTextStyle: .callout)
         button.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.titleLabel?.adjustsFontForContentSizeCategory = true
         
         return button
     }()

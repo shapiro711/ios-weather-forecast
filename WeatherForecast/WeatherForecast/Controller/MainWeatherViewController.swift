@@ -26,6 +26,11 @@ final class MainWeatherViewController: UIViewController {
         setUpTableView()
         setUpRefreshControl()
     }
+    
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        sizeHeaderViewHeightToFit()
+    }
 }
 
 //MARK:- LocationManager
